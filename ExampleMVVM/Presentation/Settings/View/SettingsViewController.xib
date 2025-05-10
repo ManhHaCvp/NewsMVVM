@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingsViewController" customModule="ExampleMVVM" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2J-6J-KWa" userLabel="Back">
+                    <rect key="frame" x="15" y="50.666666666666657" width="48" height="38"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="HeaderDetailArrow">
+                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="lFi-E0-P90"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOi-dT-IGG">
+                    <rect key="frame" x="165" y="59" width="63" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMD-9e-aDn">
+                    <rect key="frame" x="15" y="96" width="363" height="35.666666666666657"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="bell" catalog="system" title="Notification" imagePadding="5">
+                        <backgroundConfiguration key="background"/>
+                        <fontDescription key="titleFontDescription" type="system" pointSize="18"/>
+                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="NotificationButtonTapped:" destination="-1" eventType="touchUpInside" id="vx2-7w-gI5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zw-Hc-lrD" userLabel="RightNoti">
+                    <rect key="frame" x="236" y="43" width="152" height="142"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="larger"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JE6-gj-Chm" userLabel="Security">
+                    <rect key="frame" x="15" y="161.66666666666666" width="363" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="exclamationmark.lock" catalog="system" title="Secutity" imagePadding="5">
+                        <fontDescription key="titleFontDescription" name="Geneva" family="Geneva" pointSize="18"/>
+                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEb-De-zQ7" userLabel="RightSecurity">
+                    <rect key="frame" x="340" y="160.33333333333334" width="48" height="38"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="RightArrow"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1X-zH-yfL">
+                    <rect key="frame" x="15" y="226.66666666666666" width="363" height="34.999999999999972"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="questionmark.circle" catalog="system" title="Help" imagePadding="5">
+                        <fontDescription key="titleFontDescription" name="Geneva" family="Geneva" pointSize="18"/>
+                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJu-gY-eix" userLabel="RightHelp">
+                    <rect key="frame" x="340" y="225.33333333333334" width="48" height="38.000000000000028"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="RightArrow"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5J9-i2-aJR">
+                    <rect key="frame" x="15" y="291.66666666666669" width="363" height="35"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="moon" catalog="system" title="Dark Mode" imagePadding="5">
+                        <fontDescription key="titleFontDescription" name="Geneva" family="Geneva" pointSize="18"/>
+                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                    </buttonConfiguration>
+                </button>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gvE-wP-Uqz">
+                    <rect key="frame" x="319" y="293.66666666666669" width="51" height="31"/>
+                    <connections>
+                        <action selector="modeSwitchToggled:" destination="-1" eventType="valueChanged" id="wEH-Df-qpz"/>
+                    </connections>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7mT-tu-GhW">
+                    <rect key="frame" x="15" y="356.66666666666669" width="363" height="35"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="door.left.hand.open" catalog="system" title="Logout" imagePadding="5">
+                        <fontDescription key="titleFontDescription" name="Geneva" family="Geneva" pointSize="18"/>
+                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                    </buttonConfiguration>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PEb-De-zQ7" secondAttribute="trailing" constant="5" id="Dg5-QO-M0K"/>
+                <constraint firstItem="5J9-i2-aJR" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="F6i-ZF-pHY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Zw-Hc-lrD" secondAttribute="trailing" constant="5" id="FpS-pV-aKN"/>
+                <constraint firstItem="Z1X-zH-yfL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="GaN-td-71J"/>
+                <constraint firstItem="gvE-wP-Uqz" firstAttribute="centerY" secondItem="5J9-i2-aJR" secondAttribute="centerY" id="JrW-rf-2DQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xJu-gY-eix" secondAttribute="trailing" constant="5" id="Kci-Oy-K7L"/>
+                <constraint firstItem="EOi-dT-IGG" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Nu1-OI-ubX"/>
+                <constraint firstItem="7mT-tu-GhW" firstAttribute="top" secondItem="5J9-i2-aJR" secondAttribute="bottom" constant="30" id="NzS-rR-Mag"/>
+                <constraint firstItem="c2J-6J-KWa" firstAttribute="centerY" secondItem="EOi-dT-IGG" secondAttribute="centerY" id="Qiz-Zp-hdG"/>
+                <constraint firstItem="FMD-9e-aDn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="RBh-V1-Qnk"/>
+                <constraint firstItem="JE6-gj-Chm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="a5R-eD-w5F"/>
+                <constraint firstItem="5J9-i2-aJR" firstAttribute="top" secondItem="Z1X-zH-yfL" secondAttribute="bottom" constant="30" id="aQ4-CN-Hkt"/>
+                <constraint firstItem="PEb-De-zQ7" firstAttribute="centerY" secondItem="JE6-gj-Chm" secondAttribute="centerY" id="by7-qU-yWi"/>
+                <constraint firstItem="FMD-9e-aDn" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="eRw-f3-Lfl"/>
+                <constraint firstItem="JE6-gj-Chm" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="fU8-4w-lY0"/>
+                <constraint firstItem="5J9-i2-aJR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="jjM-em-bjn"/>
+                <constraint firstItem="7mT-tu-GhW" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="meK-hl-gSw"/>
+                <constraint firstItem="0Zw-Hc-lrD" firstAttribute="centerY" secondItem="FMD-9e-aDn" secondAttribute="centerY" id="mwc-7s-Rb1"/>
+                <constraint firstItem="c2J-6J-KWa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="nif-0T-Fyq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gvE-wP-Uqz" secondAttribute="trailing" constant="25" id="oZp-uD-NTd"/>
+                <constraint firstItem="7mT-tu-GhW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="ojI-K0-FQy"/>
+                <constraint firstItem="JE6-gj-Chm" firstAttribute="top" secondItem="FMD-9e-aDn" secondAttribute="bottom" constant="30" id="rc9-iz-L2l"/>
+                <constraint firstItem="Z1X-zH-yfL" firstAttribute="top" secondItem="JE6-gj-Chm" secondAttribute="bottom" constant="30" id="sSs-wg-z0H"/>
+                <constraint firstItem="Z1X-zH-yfL" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="utA-wM-rRy"/>
+                <constraint firstItem="xJu-gY-eix" firstAttribute="centerY" secondItem="Z1X-zH-yfL" secondAttribute="centerY" id="vtl-WA-ath"/>
+                <constraint firstItem="EOi-dT-IGG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xbF-Gu-3Vz"/>
+                <constraint firstItem="FMD-9e-aDn" firstAttribute="top" secondItem="EOi-dT-IGG" secondAttribute="bottom" constant="16" id="yIv-pl-jNJ"/>
+            </constraints>
+            <point key="canvasLocation" x="73" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HeaderDetailArrow" width="24" height="24"/>
+        <image name="RightArrow" width="24" height="24"/>
+        <image name="bell" catalog="system" width="125" height="128"/>
+        <image name="door.left.hand.open" catalog="system" width="108" height="128"/>
+        <image name="exclamationmark.lock" catalog="system" width="111" height="128"/>
+        <image name="larger" width="128" height="128"/>
+        <image name="moon" catalog="system" width="128" height="123"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="123"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TabCell" customModule="ExampleMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lm-Ly-CHC">
+                        <rect key="frame" x="0.0" y="5" width="50" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qsz-FK-2Pe">
+                        <rect key="frame" x="0.0" y="35" width="50" height="2"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="aGS-tf-Jfe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9lm-Ly-CHC" secondAttribute="bottom" constant="5" id="Jxs-8P-oAW"/>
+                <constraint firstItem="9lm-Ly-CHC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="M1v-Bd-U1c"/>
+                <constraint firstAttribute="trailing" secondItem="Qsz-FK-2Pe" secondAttribute="trailing" id="TZP-AQ-ZU9"/>
+                <constraint firstItem="Qsz-FK-2Pe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WIN-Dx-DUx"/>
+                <constraint firstItem="9lm-Ly-CHC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="X29-xe-fTj"/>
+                <constraint firstAttribute="trailing" secondItem="9lm-Ly-CHC" secondAttribute="trailing" id="YCl-H6-T4Q"/>
+                <constraint firstItem="Qsz-FK-2Pe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="35" id="mXK-AV-feF"/>
+            </constraints>
+            <connections>
+                <outlet property="titleLabel" destination="9lm-Ly-CHC" id="724-NK-Ghh"/>
+                <outlet property="underlineView" destination="Qsz-FK-2Pe" id="b9t-0D-juw"/>
+            </connections>
+            <point key="canvasLocation" x="36.641221374045799" y="-11.267605633802818"/>
+        </collectionViewCell>
+    </objects>
+</document>

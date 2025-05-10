@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CommentCell" customModule="ExampleMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAJ-Kn-PUs">
+                        <rect key="frame" x="15" y="14" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="IAJ-Kn-PUs" secondAttribute="height" multiplier="1:1" id="k6D-x4-vSd"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <backgroundConfiguration key="background" image="heart" catalog="system"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="heartButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0x5-J2-Xj7"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.3K" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJI-eb-6lY">
+                        <rect key="frame" x="36" y="14.333333333333336" width="33.666666666666657" height="15.666666666666664"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Peb-5o-ORz">
+                        <rect key="frame" x="277" y="13" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Peb-5o-ORz" secondAttribute="height" multiplier="1:1" id="5QF-JL-OhB"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <backgroundConfiguration key="background" image="bookmark" catalog="system"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="bookmarkButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hcM-C3-R9J"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ed-Dd-NxA">
+                        <rect key="frame" x="77.666666666666671" y="13" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="1ed-Dd-NxA" secondAttribute="height" multiplier="1:1" id="ZYI-We-1NX"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain">
+                            <backgroundConfiguration key="background" image="ellipsis.message" catalog="system"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lJI-eb-6lY" firstAttribute="leading" secondItem="IAJ-Kn-PUs" secondAttribute="trailing" constant="5" id="Foo-BX-DVf"/>
+                    <constraint firstAttribute="trailing" secondItem="Peb-5o-ORz" secondAttribute="trailing" constant="25" id="Ibt-cb-4Tq"/>
+                    <constraint firstItem="IAJ-Kn-PUs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Krp-lb-hRp"/>
+                    <constraint firstItem="Peb-5o-ORz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="Mqm-z7-7Nb"/>
+                    <constraint firstItem="1ed-Dd-NxA" firstAttribute="leading" secondItem="lJI-eb-6lY" secondAttribute="trailing" constant="8" id="Z7a-th-oyD"/>
+                    <constraint firstItem="IAJ-Kn-PUs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="fqW-VA-tte"/>
+                    <constraint firstItem="IAJ-Kn-PUs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ilj-aM-WWU"/>
+                    <constraint firstItem="lJI-eb-6lY" firstAttribute="centerY" secondItem="IAJ-Kn-PUs" secondAttribute="centerY" id="ktR-fg-YhS"/>
+                    <constraint firstItem="1ed-Dd-NxA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="kz2-VW-OS5"/>
+                    <constraint firstItem="Peb-5o-ORz" firstAttribute="centerY" secondItem="lJI-eb-6lY" secondAttribute="centerY" id="qBq-q7-ojB"/>
+                    <constraint firstItem="1ed-Dd-NxA" firstAttribute="centerY" secondItem="lJI-eb-6lY" secondAttribute="centerY" id="zKF-ka-3Bj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bookmarkButton" destination="Peb-5o-ORz" id="j2h-BX-xib"/>
+                <outlet property="heartButton" destination="IAJ-Kn-PUs" id="IIe-c9-rth"/>
+            </connections>
+            <point key="canvasLocation" x="131" y="-11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookmark" catalog="system" width="110" height="128"/>
+        <image name="ellipsis.message" catalog="system" width="128" height="116"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
+    </resources>
+</document>
